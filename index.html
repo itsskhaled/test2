@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicago salon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="/index.css"> -->
+    <style>
+        * {
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main .title{
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 520px;
+    left: 800px;
+}
+.main .info {
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 560px;
+    left: 750px;
+}
+
+.main .btn {
+    display: inline-block;
+    position: relative;
+    top: 550px;
+    left: 600px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #ffd000;
+    transition: 0.3s;
+}
+
+.main .btn:hover{
+    background: white;
+}
+
+.main a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    </style>
+</head>
+<body>
+    <section class="main" data-aos="fade-in">
+        <h1 class="title" data-aos="fade-up" data-aos-duration="1000">مرحباً بكم في صالون شيكاغو</h1>
+        <h1 class="info" data-aos="fade-up" data-aos-duration="1000">قم بحجز دورك الأن </h1>
+        <a href="join.php" class="btn" data-aos="fade-right" data-aos-duration="1000" >احجز الأن</a>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
